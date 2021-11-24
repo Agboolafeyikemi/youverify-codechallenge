@@ -1,13 +1,19 @@
 <template>
-  <section>
-    <div class="flex items-center px-8" height="72px">
-      <Header />
-    </div>
-    <aside :class="`${active} bg-secondary text-white`">
-      <sidenav></sidenav>
-    </aside>
-    <!-- <Nuxt /> -->
-  </section>
+  <el-container>
+    <el-header height="72px" class="flex items-center px-8">
+      <Header @isToggleSidebar="toggleSidebar" />
+    </el-header>
+    <el-container>
+      <transition name="slide">
+        <el-aside :class="`${active} bg-secondary text-white`">
+          <Sidenav />
+        </el-aside>
+      </transition>
+      <el-main class="p-0" style="padding: 0px">
+        <Nuxt />
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 
 <script>
@@ -45,7 +51,7 @@ export default {
 }
 
 body {
-  font-family: "BR Sonoma";
+  font-family: "BR Sonoma" !important;
 }
 .slide-enter-active {
   transition: all 0.7s ease;

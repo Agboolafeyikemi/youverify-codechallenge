@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "BR Sonoma";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/br-sonoma/BRSonoma-Regular.otf") format("truetype");
+}
+
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: #023A59;
+}
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: #ecf5ff;
+  color: #46B2C8;
+}
