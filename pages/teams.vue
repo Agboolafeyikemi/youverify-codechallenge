@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex items-center justify-center">
-      <h1 class="text-2xl text-grayLight">Teams</h1>
+    <h1 class="text-2xl text-grayLight">Teams Page</h1>
   </div>
 </template>
 
@@ -8,5 +8,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>

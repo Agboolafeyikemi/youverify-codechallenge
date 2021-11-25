@@ -63,7 +63,7 @@ export default {
 a.nuxt-link-active {
   font-weight: bold;
 }
-/* exact link will show the primary color for only the exact matching link */
+
 a.nuxt-link-exact-active {
   color: white;
   background: #46b2c8;

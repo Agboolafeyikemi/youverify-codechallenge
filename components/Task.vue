@@ -1,60 +1,35 @@
 <template>
-  <div class="" id="tasks">
-    <el-tabs v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane label="24 Unassigned" name="first">
-        <div v-for="i in 24" :key="i">
-          <SingleTask />
+  <div class="py-5 px-4 flex border-b">
+    <div class="">
+      <div
+        class="bg-primary rounded-full w-8 h-8 flex justify-center items-center"
+      >
+        <i class="text-white el-icon-plus font-black"></i>
+      </div>
+      <span class="text-grayLighter text-sm">Assign Agent</span>
+    </div>
+    <div class="flex items-center justify-between w-full">
+      <div class="w-11/12 text-sm">
+        <h1 class="">Abiodun Olawale Solomon</h1>
+        <p class="text-grayLight mt-1">12b Emmanuel Hign street, Sur...</p>
+        <div class="flex mt-1">
+          <BankLogo />
+          <span class="ml-2 text-grayLight">Sterling Bank PLC</span>
         </div>
-      </el-tab-pane>
-      <el-tab-pane label="12 assigned" name="second">
-        <div v-for="i in 12" :key="i">
-          <SingleTask />
-        </div>
-      </el-tab-pane>
-      <el-tab-pane label="30 Completed" name="third">
-        <div v-for="i in 30" :key="i">
-          <SingleTask />
-        </div>
-      </el-tab-pane>
-    </el-tabs>
+        <p class="mt-4 text-blue-500">A day Ago</p>
+      </div>
+      <i class="el-icon-arrow-right"></i>
+    </div>
   </div>
 </template>
 
 <script>
-import SingleTask from "./modules/SingleTask.vue";
+import BankLogo from "../assets/icons/bank-icon.vue";
 export default {
   components: {
-    SingleTask,
-  },
-  data() {
-    return {
-      activeName: "first",
-    };
-  },
-  methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
-    },
+    BankLogo,
   },
 };
 </script>
 
-<style>
-#tasks .el-tabs__nav-scroll {
-  padding: 0px 20px;
-}
-
-#tasks .el-tabs__item {
-  padding: 0px 20px 0px 0px;
-  color: #C4C4C4;
-  outline: none;
-}
-
-#tasks .el-tabs__item.is-active {
-  color: #023a59;
-}
-
-#tasks .el-tabs__active-bar {
-  background-color: #023a59;
-}
-</style>
+<style></style>

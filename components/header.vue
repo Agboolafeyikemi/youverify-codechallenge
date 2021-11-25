@@ -6,23 +6,6 @@
       </NuxtLink>
     </div>
     <div class="flex items-center">
-      <!-- <div
-        class="
-          w-8
-          h-8
-          flex
-          items-center
-          justify-center
-          mr-4
-          rounded-full
-          shadow-md
-        "
-      >
-        <Sidenavicon
-          :class="rotate ? 'toggleSidenavIconTrue' : 'toggleSidenavIconFalse'"
-          @click="toggleSidebar"
-        />
-      </div> -->
       <div
         class="
           w-8
@@ -37,37 +20,35 @@
       >
         <i
           :class="`${rotate} sidebarIcon text-darkPrimary el-icon-back cursor-pointer`"
-          @click="toggleSidebar"
+          @click="isToggleSidenav"
         ></i>
       </div>
-    </div>
-    <div class="header-action hidden md:block">
-      <el-input
-        placeholder="Search for anything here"
-        v-model="input3"
-        class="input-with-select"
-        suffix-icon="el-icon-search"
-      >
-        <el-select v-model="select" slot="prepend" placeholder="All">
-          <el-option label="Restaurant" value="1"></el-option>
-          <el-option label="Order No." value="2"></el-option>
-          <el-option label="Tel" value="3"></el-option>
-        </el-select>
-      </el-input>
+      <div class="header-action hidden md:block">
+        <el-input
+          placeholder="Search for anything here"
+          v-model="inputSearch"
+          class="input-with-select"
+          suffix-icon="el-icon-search"
+        >
+          <el-select v-model="select" slot="prepend" placeholder="All">
+            <el-option label="All" value="1"></el-option>
+          </el-select>
+        </el-input>
+      </div>
     </div>
     <div>
       <div class="flex items-center">
         <div class="hidden md:block relative p-2 rounded-lg bg-primaryLight">
-          <Notify />
+          <Notification />
           <span
             class="
-              h-4
-              w-4
               flex
               justify-center
               items-center
               rounded-full
               bg-redDark
+              h-4
+              w-4
               absolute
               top-0
               right-0
@@ -101,25 +82,24 @@
 <script>
 import Logo from "../assets/images/Logo.vue";
 import Sidenavicon from "../assets/icons/sidenavicon.vue";
-import Notify from "../assets/icons/notify-icon.vue";
+import Notification from "../assets/icons/notify-icon.vue";
 export default {
   components: {
     Logo,
     Sidenavicon,
-    Notify,
+    Notification,
   },
   data() {
     return {
       rotate: false,
-      input3: "",
+      inputSearch: "",
       select: "",
     };
   },
   methods: {
-    toggleSidebar() {
+    isToggleSidenav() {
       this.rotate = !this.rotate;
-      this.$emit("isToggleSidebar");
-      console.log(rotate, "rotate");
+      this.$emit("isToggleSidenav");
     },
   },
 };

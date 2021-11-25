@@ -1,69 +1,93 @@
 <template>
-  <div class="" id="agents">
-    <el-tabs :stretch="stretch" v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane name="first" label="All">
-        <div v-for="i in 4" :key="i">
-          <SingleAgent />
+  <div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-1.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
         </div>
-      </el-tab-pane>
-      <el-tab-pane name="second">
-        <span slot="label" class="flex items-center">
-          <div class=" mr-1 h-2 w-2 rounded-full bg-green-500"></div>
-          <span>Online</span>
-        </span>
-        <div v-for="i in 2" :key="i">
-          <SingleAgent />
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-2.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
         </div>
-      </el-tab-pane>
-      <el-tab-pane name="third">
-        <span slot="label" class="flex items-center">
-          <div class=" mr-1 h-2 w-2 rounded-full bg-red-500"></div>
-          <span>Offline</span>
-        </span>
-        <div v-for="i in 2" :key="i">
-          <SingleAgent />
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-3.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
         </div>
-      </el-tab-pane>
-    </el-tabs>
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-4.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
+        </div>
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-5.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
+        </div>
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
+    <div class="py-5 px-4 flex border-b">
+      <div class="">
+        <img class="rounded-full" src="/user-6.png" alt="" />
+      </div>
+      <div class="ml-4 flex items-center justify-between w-full">
+        <div class="w-11/12 text-sm">
+          <h1 class="">Adebayo Adeoye Emmanuel</h1>
+          <p class="text-grayLight mt-1">08069786754</p>
+          <span class="mt-1 text-grayLight">Akure</span>
+        </div>
+        <i class="el-icon-arrow-right"></i>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import SingleAgent from "./modules/SingleAgent.vue";
+import Bank from "@/assets/icons/bank-icon.vue";
 export default {
   components: {
-    SingleAgent,
-  },
-  data() {
-    return {
-      activeName: "first",
-      stretch: true,
-    };
-  },
-  methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
-    },
+    Bank,
   },
 };
 </script>
 
-<style>
-#agents .el-tabs__nav-scroll {
-  padding: 0px 20px;
-}
-
-#agents .el-tabs__item {
-  padding: 0px 20px 0px 0px;
-  color: #c4c4c4;
-  outline: none;
-}
-
-#agents .el-tabs__item.is-active {
-  color: #023a59;
-}
-
-#agents .el-tabs__active-bar {
-  background-color: #023a59;
-}
-</style>
+<style></style>

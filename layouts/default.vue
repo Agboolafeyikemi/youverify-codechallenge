@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header height="72px" class="flex items-center px-8">
-      <Header @isToggleSidebar="toggleSidebar" />
+      <Header @isToggleSidenav="toggleSidenav" />
     </el-header>
     <el-container>
       <transition name="slide">
@@ -31,25 +31,13 @@ export default {
     };
   },
   methods: {
-    toggleSidebar() {
+    toggleSidenav() {
       this.active = !this.active;
     },
   },
 };
 </script>
 <style>
-.el-aside {
-  /* display: none; */
-  width: 0 !important;
-  transition: 0.5s;
-}
-
-.el-aside.true {
-  /* display: block; */
-  width: 250px !important;
-  transition: 0.5s;
-}
-
 body {
   font-family: "BR Sonoma" !important;
 }
@@ -64,5 +52,14 @@ body {
 .slide-enter,
 .slide-leave-active {
   transform: translateX(100%);
+}
+.el-aside {
+  width: 0 !important;
+  transition: 0.5s;
+}
+
+.el-aside.true {
+  width: 250px !important;
+  transition: 0.5s;
 }
 </style>

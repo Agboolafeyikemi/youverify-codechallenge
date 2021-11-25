@@ -12,7 +12,7 @@
       <div class="z-50 container-card absolute h-full top-0 left-0 flex">
         <div :class="`${active_left} overflow-scroll left-card bg-white`">
           <div class="bg-primary text-white px-4 py-2">Task</div>
-          <Task />
+          <Tasks />
         </div>
         <div
           class="
@@ -26,12 +26,27 @@
           "
           @click="toggleLeft"
         >
-          <i :class="`${rotate_left} sidebarIcon text-white el-icon-arrow-left`"></i>
+          <i
+            :class="`${rotate_left} sidebarIcon text-white el-icon-arrow-left`"
+          ></i>
         </div>
       </div>
       <div class="z-50 absolute h-full top-0 right-0 flex">
-        <div class="bg-blackLight flex justify-center items-center h-10 w-10 cursor-pointer" @click="toggleRight">
-          <i :class="`${rotate_right} sidebarIcon text-white el-icon-arrow-right`"></i>
+        <div
+          class="
+            bg-blackLight
+            flex
+            justify-center
+            items-center
+            h-10
+            w-10
+            cursor-pointer
+          "
+          @click="toggleRight"
+        >
+          <i
+            :class="`${rotate_right} sidebarIcon text-white el-icon-arrow-right`"
+          ></i>
         </div>
         <div :class="`${active_right} overflow-scroll right-card bg-white`">
           <div
@@ -48,22 +63,27 @@
             <span> Agents </span>
             <i class="el-icon-search cursor-pointer"></i>
           </div>
-          <Agent />
+          <Agents />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-
 <script>
+import Tasks from "@/components/tasks.vue";
+import Agents from "@/components/agents.vue";
 export default {
+  components: {
+    Agents,
+    Tasks,
+  },
   data() {
     return {
       active_left: true,
       active_right: true,
       rotate_left: false,
-      rotate_right: false
+      rotate_right: false,
     };
   },
   methods: {
@@ -78,7 +98,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .container-card {
@@ -96,28 +115,23 @@ export default {
 }
 
 .left-card {
-  /* display: none; */
-  width: 0!important;
+  width: 0 !important;
   transition: 0.5s;
 }
 
 .left-card.true {
-  /* display: block; */
   width: 351px !important;
   transition: 0.5s;
 }
 
 .right-card {
-  /* display: none; */
-  width: 0!important;
+  width: 0 !important;
   transition: 0.5s;
 }
 
 .right-card.true {
-  /* display: block; */
   width: 351px !important;
   transition: 0.5s;
   overflow: scroll;
 }
-
 </style>
