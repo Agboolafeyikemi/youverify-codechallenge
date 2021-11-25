@@ -82,11 +82,8 @@
 </template>
 
 <script>
-import Bank from "@/assets/icons/bank-icon.vue";
 export default {
-  components: {
-    Bank,
-  },
+  components: {},
 };
 </script>
 
