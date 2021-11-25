@@ -1,7 +1,9 @@
 <template>
   <div class="">
     <div class="bg-primaryDark py-5 px-8">
-      <h1 class="font-bold text-secondary">Cheta And Daughters Limited</h1>
+      <h1 class="font-bold text-secondary">
+        Cheta And <wbr /> Daughters Limited
+      </h1>
       <span class="text-secondary">RC123456789</span>
     </div>
 
@@ -65,5 +67,14 @@ a.nuxt-link-active {
 a.nuxt-link-exact-active {
   color: white;
   background: #46b2c8;
+}
+.test {
+  width: 85%;
+  font-family: BR Sonoma;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #c2e2e9;
 }
 </style>
