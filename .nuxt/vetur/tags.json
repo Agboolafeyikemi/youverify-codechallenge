@@ -1,0 +1,23 @@
+{
+  "Agent": {
+    "description": "Auto imported from components/Agent.vue"
+  },
+  "Task": {
+    "description": "Auto imported from components/Task.vue"
+  },
+  "Agents": {
+    "description": "Auto imported from components/agents.vue"
+  },
+  "Agentss": {
+    "description": "Auto imported from components/agentss.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header.vue"
+  },
+  "Sidenav": {
+    "description": "Auto imported from components/sidenav.vue"
+  },
+  "Tasks": {
+    "description": "Auto imported from components/tasks.vue"
+  }
+}

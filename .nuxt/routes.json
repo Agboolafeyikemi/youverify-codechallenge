@@ -1,0 +1,38 @@
+[
+  {
+    "name": "agents",
+    "path": "/agents",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/agents.vue",
+    "chunkName": "pages/agents"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/settings.vue",
+    "chunkName": "pages/settings"
+  },
+  {
+    "name": "tasks",
+    "path": "/tasks",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/tasks.vue",
+    "chunkName": "pages/tasks"
+  },
+  {
+    "name": "teams",
+    "path": "/teams",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/teams.vue",
+    "chunkName": "pages/teams"
+  },
+  {
+    "name": "users",
+    "path": "/users",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/users.vue",
+    "chunkName": "pages/users"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/feyikemiagboola/Documents/codechallenge/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
