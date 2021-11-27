@@ -1,4 +1,5 @@
 export default {
+  target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "codechallenge",
@@ -33,6 +34,7 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-  target: "static",
+  build: {
+    transpile: [/^element-ui/],
+  },
 };
