@@ -71,8 +71,8 @@
 </template>
 
 <script>
-import Tasks from "@/components/taskss.vue";
-import Agents from "@/components/agentss.vue";
+import Tasks from "@/components/tasks.vue";
+import Agents from "@/components/agents.vue";
 export default {
   components: {
     Agents,
