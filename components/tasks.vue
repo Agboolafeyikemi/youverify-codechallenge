@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Task from "@/components/task.vue";
+import Task from "./task.vue";
 export default {
   components: {
     Task,

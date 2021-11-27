@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Agent from "@/components/agent.vue";
+import Agent from "./agent.vue";
 export default {
   components: {
     Agent,
